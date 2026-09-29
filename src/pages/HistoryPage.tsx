@@ -1,3 +1,4 @@
+
 import { useLiveQuery } from 'dexie-react-hooks'
 import { Link } from 'react-router-dom'
 import { db } from '../lib/db'
@@ -35,7 +36,7 @@ export function HistoryPage() {
 
   return (
     <div className="page">
-      <div className="row-between">
+      <div className="h-row">
         <div>
           <h1 className="title">Historique</h1>
           <p className="sub">
@@ -46,7 +47,7 @@ export function HistoryPage() {
         {done.length > 0 && (
           <button
             type="button"
-            className="btn btn-danger"
+            className="btn danger"
             onClick={resetHistory}
           >
             Reset
@@ -87,7 +88,7 @@ export function HistoryPage() {
 
               <button
                 type="button"
-                className="btn btn-danger"
+                className="btn danger"
                 style={{
                   width: '100%',
                   marginTop: 12,
