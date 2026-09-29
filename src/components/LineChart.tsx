@@ -30,7 +30,7 @@ export function LineChart({ points }: { points: Point[] }) {
         strokeLinecap="round"
         points={coords.join(' ')}
       />
-      {points.map((p, i) => {
+      {points.map((_p, i) => {
         const [x, y] = coords[i].split(',')
         return <circle key={i} cx={x} cy={y} r="4" fill="#c8f542" />
       })}

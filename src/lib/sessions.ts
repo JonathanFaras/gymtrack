@@ -1,6 +1,6 @@
 import { db } from './db'
 import { uid } from './format'
-import type { LastSetPreview, SetLog, WorkoutExercise, WorkoutSession } from './types'
+import type { LastSetPreview, SetLog, WorkoutExercise, WorkoutSession } from '../types'
 
 export async function lastSetsForExercise(
   exerciseId: string,
